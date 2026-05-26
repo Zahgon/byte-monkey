@@ -3,24 +3,27 @@ package uk.co.probablyfine.bytemonkey.testfiles;
 import java.io.IOException;
 
 public class FaultTestObject {
+
     public void printSomething() throws IOException {
-        System.out.println("Hello!");
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void printSomethingElse() throws IllegalStateException {
-        System.out.println("Goodbye!");
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void printAndThrowNonPublicException() throws ExceptionWithNoPublicConstructor {
-        System.out.println("Uh-oh!");
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void safePrint() {
-        System.out.println("Hi!");
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public static class ExceptionWithNoPublicConstructor extends RuntimeException {
-        private ExceptionWithNoPublicConstructor() {} // No constructor for you!
+
+        // No constructor for you!
+        private ExceptionWithNoPublicConstructor() {
+        }
     }
 }
-

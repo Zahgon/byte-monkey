@@ -11,8 +11,6 @@ public class FilterByClassAndMethodName {
     }
 
     public boolean matches(String className, String methodName) {
-        String fullName = className + "/" + methodName;
-
-        return this.pattern.matcher(fullName).find();
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 }

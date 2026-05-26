@@ -9,22 +9,22 @@ public class NullabilityTestPojo {
     }
 
     public String getName() {
-        return name;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setName1stArg(String name) {
-        this.name = name;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setName2ndArg(int i, String name) {
-        this.name = name;
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setNameNoArgs() {
-        this.name = "zap";
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 
     public void setNamePrimitiveArgs(int i, int i2) {
-        this.name = "zoom";
+        throw new UnsupportedOperationException("STUB: not implemented");
     }
 }
